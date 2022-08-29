@@ -22,8 +22,8 @@
       if(btn.value == "次") {
         if(count == 0){
             count++;
-            num1 = getRandomInt(1, 20);
-            num2 = getRandomInt(1, 20);
+            num1 = getRandomInt(1, 16);
+            num2 = getRandomInt(1, 13);
             document.dentaku.display.value = eval(num1);
             document.dentaku.display.value += "×";
             document.dentaku.display.value += eval(num2);
@@ -52,8 +52,8 @@
                 cul = num1-num2;
             }
             if(getRandomInt(1, 5) == 3){
-                num1 = getRandomInt(1, 20);
-                num2 = getRandomInt(1, 20);
+                num1 = getRandomInt(1, 16);
+                num2 = getRandomInt(1, 13);
                 document.dentaku.display.value = eval(num1);
                 document.dentaku.display.value += "×";
                 document.dentaku.display.value += eval(num2);
@@ -153,7 +153,6 @@
       text-align: center; /* 文字を右詰めに */
       /* 見た目の詳細設定 */
       background: #747373b9;
-      color: #000000;
       border-top: solid #dcdcdca4 5px;
       border-bottom: solid #dcdcdca4 5px;
       border-right: solid #b6b6b6 6px;
@@ -165,7 +164,6 @@
       text-align: center; /* 文字を右詰めに */
       /* 見た目の詳細設定 */
       background: #339cdd;
-      color: #000000;
       border-top: solid #dcdcdca4 5px;
       border-bottom: solid #dcdcdca4 5px;
       border-right: solid #b6b6b6 6px;
@@ -177,14 +175,26 @@
       text-align: center; /* 文字を右詰めに */
       /* 見た目の詳細設定 */
       background: #339cdd;
-      color: #000000;
       border-top: solid #dcdcdca4 5px;
       border-bottom: solid #dcdcdca4 5px;
       border-right: solid #b6b6b6 6px;
       border-left: solid #b6b6b6 6px;
       border-radius: 5px;
     }
-
+    
+    .display.value {
+        font-size: 60px;    /* 文字サイズ指定 */
+        color: blue;
+    }
+    .display2.value {
+        font-size: 60px;    /* 文字サイズ指定 */
+        color: blue;
+    }
+    .display3s.value {
+        font-size: 60px;    /* 文字サイズ指定 */
+        color: blue;
+    }
+    
     /* カーソルを上に乗せた時に色を濃くする */
     input:hover {
       background: #747373b9;
